@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="POROTFOLIO.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+   <nav>
+    <div class="container nav-container">
+        <a href="" class="logo"><h3>SAPAARIYA SWATHI</h3></a>
+        <u1 class="navlinks">
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#About">About</a></li>
+            <li><a href="#Skills">Skills</a></li>
+            <li><a href="#Trainings">Trainings</a></li>
+            <li><a href="#Activities">Activities</a></li>
+            <li><a href="#Contact">Contact</a></li>
+            <li>
+                <button class="Mood-icon Moon"><i class="fa fa-moon"></i></button>
+                <button class="Mood-icon Sun"><i class="fa fa-sun"></i></button>
+            </li>
+        </u1>
+
+    </div>
+   </nav>
+   <header id="Home">
+    <div class=".container.header-container">
+        <div class="header-left">
+            <h3>Hi, I'm</h3>
+            <h1>SAPAARIYA SWATHI</h1>
+            <p>
+                <br>I am pursuing a Bachelor of Technology in<br> Rajeev Gandhi Memorial College of <br>Engineering and Technology.<br> I am an intern at CodSoft.
+            </p>
+        </div>
+        <div class="social-links">
+            <a href=""><i class="fab fa-whatsapp"></i></a>
+            <a href=""><i class="fab fa-twitter"></i></a>
+            <a href=""><i class="fab fa-instagram"></i></a>
+            <a href=""><i class="fab fa-linkedin"></i></a>
+        </div>
+        <a href="./s.swathi resume.pdf" class="btn">Resume</a>
+        <div class="header-right">
+            <div class="profession-content">
+                <div class="profession-box">
+                    <div class="profession" style="--r:0;">
+                        <i class="fa fa-code"></i>
+                        <h3>Web Developer</h3>
+                    </div>
+                    <div class="profession" style="--r:1;">
+                        <i class="fa fa-code"></i>
+                        <h3>Web Developer</h3>
+                    </div>
+                    <div class="profession" style="--r:2;">
+                        <i class="fa fa-code"></i>
+                        <h3>Web Developer</h3>
+                    </div>
+                    <div class="circle"></div>
+                </div>
+                <div class="overlay"></div>
+            </div>
+            <div class="header-img">
+                <img src="./swathi photo.jpg">
+            </div>
+        </div>
+    </div>
+   </header>
+   <section id="About">
+    <div class="container about-container">
+        
+        <div class="about-right">
+            <h2>About Me</h2>
+            <h3>I am here to tell you about me !</h3>
+            <p>
+                I completed my Secondary School Certificate (SSC) <br>from S't Philomena's School with a CGPA of 8.5 <br>I'm successfully completed my Diploma at <br> Govt Polytechnic college, achieved 84%
+            </p>
+            <p>
+                I'm pursuing Bachelor of Technology (B.Tech) degree<br> at RGMCET, <br>with an ongoing CGPA of 8.1, up to the third year.<br>I'm currently undertaking an internship at Codsoft.
+            </p>
+            <a href="" class="btn">Read More</a>
+        </div>
+
+   </section>
+   <section id="Skills">
+    <div class="container container-skills">
+        <div class="skill-left">
+           
+        </div>
+    </div>
+    <div class="skill-left">
+        <h2>Skills</h2>
+        <h3 class="tech">Technical Skills:</h3>
+        <p>
+            1.Basics of SQL<br>
+            2.Basics of Python<br>
+            3.Web Developer(HTML,CSS)   
+        </p>
+        <h3>Education ans Sustainable Development:</h3>
+        <p>
+            1.Communication skills(both verbal and written)<br>
+            2.Teamwork and collaboration<br>
+            3.Time management and organization<br>
+            4.Leadership
+        </p>
+    </div>
+   </section>
+   <section id="Training">
+    <div class="container Training-container">
+        
+    </div>
+    <div class="Training-right">
+        <h2>Training</h2>
+        <h3>Electric Traction</h3>
+        <p>
+            Study Of Electric Traction:<br>
+           ● Description:<br>
+            1. The use of electric locomotives primarily came <br>in order to reduce problems of smoke pollution.<br>
+            2. I have learnt the advantages of electric locomotives such that <br>they can save fossil fuels which are limited in amount and<br>the pollution induced due to them also reduced by using a neat and <br>clean resource electricity as the power source for locomotives .  
+        </p>
+    </div>
+   </section>
+   <section id="Activities">
+    <div class="container Activities-container">
+        <div class="Activities-right">
+            <h2>Activities</h2>
+            <p>
+            I worked as a Student Organizer in an event conducted in our college<br>
+            <br>
+            I'm very active and participated in most of the events conducted in our college and participated in few events in other colleges.
+            </p>
+            
+        </div>
+        
+    </div>
+   </section>
+   <section id="Contact">
+    <div class="container contact-container">
+        <h2>Contact</h2>
+        <p>Phone: <a href="tel:123456789">7349455920</a></p>
+        <p>Email: <a href="mailto:example@example.com">swathichinni460@gmail.com</a></p>
+        <p>Nandyal,Nandyal District</p>
+    </div>
+  </section>
+   <script>
+    let NightIcon = document.querySelector('.Moon');
+    let LightIcon = document.querySelector('.Sun');
+    NightIcon.addEventListener('click',()=>{
+        NightIcon.style.display='none';
+        LightIcon.style.display='inline-block';
+        document.querySelector('body').classList.add('dark-Mood');
+    });
+    LightIcon.addEventListener('click',()=>{
+        NightIcon.style.display='inline-block';
+        LightIcon.style.display='none';
+        document.querySelector('body').classList.remove('dark-Mood');
+})
+   </script>
+   <script src="./POROTFOLIO.js"></script>
+</body>
+</html>
